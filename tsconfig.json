@@ -1,0 +1,31 @@
+{
+  "compilerOptions": {
+    "target": "ES2015",
+    "module": "commonjs",
+    "baseUrl": ".",
+    "paths": {
+      "@utils/*": ["utils/*"],
+      "@const/*": ["const/*"],
+      "@driver/*": ["test/pages/driver/*"]
+    },
+    "typeRoots": ["./types/**/*.ts"],
+    "types": ["node", "@wdio/mocha-framework", "webdriverio"],
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": true,
+    "moduleResolution": "node",
+    "allowJs": true,
+    "noEmitOnError": true,
+    // "strict": true, TODO: need to correct source to support this option
+    "esModuleInterop": true,
+    "sourceMap": true
+  },
+  "include": [
+    "./test/**/*.ts",
+    "./types/**/*.ts",
+    "./utils/**/*.ts",
+    "./config/**/*.ts",
+    "./const/**/*.ts"
+  ],
+  "exclude": ["./node_modules"],
+  "compileOnSave": true
+}
