@@ -28,8 +28,8 @@ const config: WebdriverIO.Config = {
       'goog:chromeOptions': {
         useAutomationExtension: false,
         args: [
-          // '--load-extension=genie-stage-toggle',
-          '--headless', // TODO: this wont allow extension to run
+          '--load-extension=genie-stage-toggle',
+          // '--headless', // TODO: this wont allow extension to run
         ],
       },
       'goog:loggingPrefs': {
